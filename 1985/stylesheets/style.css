@@ -1,0 +1,62 @@
+sup {
+  font-size: 14px; }
+
+#title {
+  background: #28403D;
+  padding-bottom: 10px; }
+  #title h1, #title h5 {
+    color: #FAF8EE; }
+
+.intro {
+  background: #596959; }
+  .intro .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .intro .title {
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FAF8EE; }
+  .intro p {
+    color: #FAF8EE; }
+
+.pictures {
+  background: #89997F; }
+  .pictures .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .pictures .title {
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FAF8EE; }
+  .pictures p {
+    color: #FAF8EE; }
+  .pictures h6 {
+    color: #FAF8EE; }
+  .pictures img {
+    margin-top: 20px;
+    border: 10px solid #596959; }
+
+.hierarchy {
+  background: #F2EECE; }
+  .hierarchy .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .hierarchy .title {
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 400; }
+
+.conclusion {
+  background: #F2CF66; }
+  .conclusion .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .conclusion .title {
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 400; }
+  .conclusion .references p {
+    font-size: 12px;
+    line-height: 16px; }

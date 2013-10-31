@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+    <head>
+
+        <!-- Basic Page Needs
+  ================================================== -->
+        <meta charset="utf-8">
+        <title>Styleguide Ricardo Vazquez</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+  ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS
+  ================================================== -->
+        <!--  <link rel="stylesheet" href="_css/base.css">-->
+        <link rel="stylesheet" href="../../_css/skeleton.css">
+        <!--  <link rel="stylesheet" href="_css/layout.css">-->
+        <link rel="stylesheet" href="../../_css/styleguide.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Favicons
+        ================================================== -->
+       <link rel="shortcut icon" href="/favicon.ico">
+              <!--     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
+
+        <script type="text/javascript" src="http://use.typekit.com/ynh8ngf.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+        <script type="text/javascript" src="../../_js/script.js"></script>
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-29110807-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../">About</a></li>
+                    <li><a href="../../projects/">Projects</a></li>
+                    <li><a href="../../musings/">Musings</a></li>
+                    <li><a href="../../contact" >Contact</a></li>
+                    <li><a href="../../labs/">Labs</a></li>
+                </ul>
+           </nav>
+        </header>
+
+
+<!--        <div id="welcome">
+            <h1>
+                <span>Get Inside My Head.</span>
+            </h1>
+        </div>-->
+        <div class="container">
+
+            <div class="sixteen columns">
+                <h1 class="remove-bottom " style="margin-top: 80px; margin-bottom: 0;">Style Guide</h1>
+                <h5 style="margin:0;">Get your Ray-Ban's on...</h5>
+               <!--  <hr class="large" /> -->
+            </div>
+
+
+
+            <div class="eleven columns">
+    <!--             <h6>This document is a guide to the mark-up styles used throughout the site. It is intended for you to provide feedback to me, as well as to start a movement of style guides across all websites. C'mon, start a style guide of your own.</h6>
+
+                <br> -->
+                <h3>Base Style</h3>
+                <hr>
+                <p>In order to reduce the amount of redundant code, this website uses Eric Meyer's Reset CSS which can be found <a href="http://meyerweb.com/eric/tools/css/reset/">here</a>. A CSS reet file, whether yours or someone else's, helps bring browser inconsistencies to a baseline, making it much easier to work with your own CSS files.</p>
+
+                <br>
+                <p>To include the <code>reset.css</code> file once you have downloaded it is simple using the <code>import</code> statement:</p>
+                <br>
+                <code>
+                    @import url('reset.css');
+                </code>
+                <br><br>
+                <p>The CSS Engine will first render the <code>reset.css</code> file before analyzing your own.</p>
+
+
+                <h3>Typography</h3>
+                <hr>
+
+                <h1 style="margin:0;">This is a Level 1 Heading</h1>
+                <p>The main page header of this guide is an <code>h1</code> element. Any header elements may include links, as depicted in the example.</p>
+                <br>
+                <code>
+                    h1 { <br>
+                        &nbsp; font-size: 3.5em; <br>
+                        &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                        &nbsp; font-style: normal;<br>
+                        &nbsp; font-weight: 500; <br>
+                        &nbsp; line-height: 1.25em; <br>
+
+                    }
+                </code>
+
+                <h2 style="margin:1em 0 0;">This is a Level 2 Heading</h2>
+                <p>The secondary header above is an <code>h2</code> element, which may be used for any form of important page-level header. More than one may be used per page. Consider using an <code>h2</code> unless you need a header level of less importance, or as a sub-header to an existing h2 element.</p>
+                <br>
+                <code>
+                    h2 { <br>
+                       &nbsp; font-size: 2.5em; <br>
+                       &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                       &nbsp; font-style: normal; <br>
+                       &nbsp; font-weight: 500; <br>
+                       &nbsp; line-height: 1.25em; <br>
+
+                    }
+                </code>
+
+                <h3>This is a Level 3 Heading</h3>
+                <p>The header above is an <code>h3</code> element, which may be used for any form of page-level header which falls below the h2 header in a document hierarchy.</p>
+                <br>
+                <code>
+                    h3 { <br>
+                       &nbsp; font-size: 2.0em; <br>
+                       &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                       &nbsp; font-style: normal; <br>
+                       &nbsp; font-weight: 500; <br>
+                       &nbsp; line-height: 1.25em; <br>
+
+                    }
+                </code>
+
+                <h4>This is a Level 4 Heading</h4>
+                <p>The header above is an <code>h4</code> element, which may be used for any form of page-level header which falls below the h3 header in a document hierarchy.</p>
+                <br>
+                <code>
+                    h4 { <br>
+                       &nbsp; font-size: 1.25em; <br>
+                       &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                       &nbsp; font-style: normal; <br>
+                       &nbsp; font-weight: 500; <br>
+                       &nbsp; line-height: 1.6em; <br>
+
+                    }
+                </code>
+
+                <h5>This is a Level 5 Heading</h5>
+                <p>The header above is an <code>h5</code> element, which may be used for any form of page-level header which falls below the h4 header in a document hierarchy.</p>
+                <br>
+                <code>
+                    h5 { <br>
+                       &nbsp; font-size: 1em; <br>
+                       &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                       &nbsp; font-style: italic; <br>
+                       &nbsp; font-weight: 500; <br>
+                       &nbsp; line-height: 1.6em; <br>
+                       &nbsp; text-align: center; <br>
+                       &nbsp; color:rgba(255,255,255,0.7); <br>
+                    }
+                </code>
+
+                <h6>This is a Level 6 Heading</h6>
+                <p>The header above is an <code>h6</code> element, which may be used for any form of page-level header which falls below the h5 header in a document hierarchy.</p>
+                <br>
+                <code>
+                    h6 { <br>
+                    &nbsp; font-size: 1em; <br>
+                    &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                    &nbsp; font-style: normal; <br>
+                    &nbsp; font-weight: 500; <br>
+                    &nbsp; line-height: 1.6em; <br>
+                    }
+                </code>
+                <br>
+                <h3>Groupings</h3>
+                <hr>
+                <h4>Paragraphs</h4>
+                <p>This website employs no use of <code>p</code> elements. For semantic purposes, <code>h4</code> and <code>h6</code> have replaced them. Due to the fact this website is a text-heavy website, <code>p</code> elements do not make any visual hierarchical importance. Save for the Style Guide, the <code>p</code> tag should be discouraged in its use. </p>
+
+                <h4>Horizontal rule</h4>
+                <p>The <code>hr</code> element represents a paragraph-level thematic break, e.g. a scene change in a story, or a transition to another topic within a section of a reference book. There are two types of <code>hr</code> being used in this website. A <code>large</code> class is applied to thematic breaks between <code>h1</code> elements and the main content of the page.</p>
+                <br>
+                <code>
+                    hr { <br>
+                    &nbsp; display: block; <br>
+                    &nbsp; height: 1px; <br>
+                    &nbsp; border: 0; <br>
+                    &nbsp; border-top: 1px solid; <br>
+                    &nbsp; rgb(204, 204, 204); <br>
+                    &nbsp; margin: 1em 0; <br>
+                    &nbsp; padding: 0; <br>
+                    }
+                </code>
+                <br><br>
+                <code>
+                    hr.large { <br>
+                    &nbsp; border: none; <br>
+                    &nbsp; height: 10px; <br>
+                    &nbsp; background-color: rgb(235, 235, 235); <br>
+                    &nbsp; background-color: rgba(255, 255, 255, 0.2); <br>
+                    &nbsp; margin: 20px 0 50px 0; <br>
+                    }
+                </code>
+                <br>
+                <h3>Links and Buttons</h3>
+                <hr>
+                <p>Links are used to remark a contextual or complementary supplement of information, often located externally.</p>
+                <br>
+                <h6 class="sample">Sample:</h6> <h5 style="display: inline;"><a class="colofon">  This is a colofon link.</a></h5>
+                <br><br>
+                <code>
+                    .colofon { <br>
+                        &nbsp; display:inline; <br>
+                        &nbsp; text-decoration: none; <br>
+                        &nbsp; color:white; <br>
+                        &nbsp; border-bottom: none; <br>
+                        &nbsp; -webkit-transition: border-bottom 0.3s ease; <br>
+                        &nbsp; -moz-transition: border-bottom 0.3s ease; <br>
+                        &nbsp; -o-transition: border-bottom 0.3s ease; <br>
+                        &nbsp; transition: border-bottom 0.3s ease; <br>
+                    }
+                    <br><br>
+                    .colofon:hover { <br>
+                        &nbsp; border-bottom:1px dotted; <br>
+                    }
+                </code>
+                <br><br><br><br>
+
+                <h6 class="sample">Sample:</h6> <a href="#" class="launchBtn">This is a Launch Button.</a>
+                <br><br><br>
+                <code>
+                    .launchBtn { <br>
+                        &nbsp; width: 200px; <br>
+                        &nbsp; height: 33px; <br>
+                        &nbsp; background: rgba(0,0,0,0.3); <br>
+                        &nbsp; -moz-border-radius: 5px; <br>
+                        &nbsp; -webkit-border-radius: 5px; <br>
+                        &nbsp; border-radius: 5px; <br>
+                        &nbsp; float:right; <br>
+                        &nbsp; margin: 10px; <br>
+                        &nbsp; padding: 15px 0 0 0; <br>
+                        &nbsp; margin-top: 60px; <br>
+                    }
+                    <br><br>
+                    .launchBtn a:active, a:visited, a:link { <br>
+                        &nbsp; font-family: "ff-meta-serif-web-pro",serif; <br>
+                        &nbsp; font-style: italic; <br>
+                        &nbsp; font-weight: 500; <br>
+                        &nbsp; font-size: 1em; <br>
+                        &nbsp; color: white; <br>
+                        &nbsp; text-decoration: none; <br>
+                        &nbsp; text-align: center; <br>
+
+                        &nbsp; -webkit-transition: all 0.7s ease; <br>
+                        &nbsp; -moz-transition: all 0.7s ease; <br>
+                        &nbsp; -o-transition: all 0.7s ease; <br>
+                        &nbsp; transition: all 0.5s ease; <br>
+                    }
+                    <br><br>
+                    .launchBtn:hover { <br>
+                        &nbsp; background: rgb(255,255,255); <br>
+                        &nbsp; background: rgba(255,255,255,0.8); <br>
+                        &nbsp; color:black; <br>
+                    }
+                </code>
+                    <br>
+                    <h3>Figures</h3>
+                    <hr>
+                    <p>Figures are usually used to refer to images. Figures in this website, with the exception of the Musings Page, adhere to an <code>img</code> link. Images will take the user to a predefined contextual or complementary location, internally or externally. It is important to note the feedback present within the <code>img</code> hover links. These provide for feedback, alerting the user that the images are able to be clicked on.</p>
+                    <br><br>
+
+                    <!-- <h6 class="sample">Sample:</h6> -->
+                    <div id="iconsList">
+                        <a href="https://twitter.com/#!/rvazzquez" target="_blank" id="twitter" style="margin-left:80px;"><img src="../../_img/icons/twitter.png" alt="Ricardo Vazquez Twitter"/></a>
+
+                        <a href="http://ca.linkedin.com/in/vazquezricardo" target="_blank" id="linkedin"><img src="../../_img/icons/linkedin.png" alt="Ricardo Vazquez LinkedIn"/></a>
+
+                        <a href="http://dribbble.com/rvazquez" target="_blank" id="dribbble"><img src="../../_img/icons/dribbble.png" alt="Ricardo Vazquez Dribbble"/></a>
+
+                        <a href="mailto:ricardovazquez@me.com?subject=Hi%20There!" target="_blank" id="mail"><img src="../../_img/icons/email.png" alt="Ricardo Vazquez Email"/></a>
+                    </div>
+                    <br><br>
+                    <code>
+                        #iconsList a img { <br>
+                            &nbsp; opacity:1; <br>
+                            &nbsp; filter:alpha(opacity=100); <br>
+
+                            &nbsp; -webkit-transition: opacity 0.3s ease; <br>
+                            &nbsp; -moz-transition: opacity 0.3s ease; <br>
+                            &nbsp; -o-transition: opacity 0.3s ease; <br>
+                            &nbsp; transition: opacity 0.3s ease; <br>
+                            }
+                        <br><br>
+                        #iconsList a img:hover{ <br>
+                        &nbsp; opacity:0.3; <br>
+                        }
+                    </code>
+                    <br>
+                    <h3>Selection Styles</h3>
+                    <hr>
+                    <p>This website employs the use of defining colour and background for the text the user selects. In order to maintain the User Experience, color and background selection have been modified and are shown below.</p>
+                    <br>
+                    <code>
+                        ::selection { <br>
+                            &nbsp; background:rgba(0,0,0,0.5); <br>
+                            &nbsp; background:rgb(0,0,0); <br>
+                            &nbsp; color:#inherit; <br>
+                        }
+                        <br><br>
+                        ::-moz-selection { <br>
+                            &nbsp; background:rgba(0,0,0,0.5); <br>
+                            &nbsp; background:rgb(0,0,0); <br>
+                            &nbsp; color:#inherit; <br>
+                        }
+                        <br><br>
+                        ::-webkit-selection { <br>
+                            &nbsp; background:rgba(0,0,0,0.5); <br>
+                            &nbsp; background:rgb(0,0,0); <br>
+                            &nbsp; color:#inherit; <br>
+                        }
+                    </code>
+
+
+
+
+            </div>
+
+
+             <div class="five offset-by-one columns">
+               <!--  <div class="complementary">
+                    <nav>
+                        <h1>More</h1>
+                        <ol>
+                            <li>Link 1</li>
+                            <li>Link2</li>
+                        </ol>
+                    </nav>
+
+
+                </div> -->
+            </div>
+
+
+
+            <div class="sixteen columns" style="height:40px;"></div>
+
+     <!--        <div class="sixteen columns"> <a href="#top" id="top">To Top</a></div> -->
+
+        </div><!-- container -->
+
+
+
+        <!-- JS
+        ================================================== -->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="_js/tabs.js"></script>
+
+        <!-- End Document
+        ================================================== -->
+    </body>
+</html>

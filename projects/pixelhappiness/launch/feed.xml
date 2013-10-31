@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2013-03-18T00:00:00Z</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>How I Met Apple Sorbet</title>
+    <link rel="alternate" href="/2013/03/18/how-i-met-apple-sorbet/"/>
+    <id>/2013/03/18/how-i-met-apple-sorbet/</id>
+    <published>2013-03-18T00:00:00Z</published>
+    <updated>2013-03-18T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;If there’s one thing you should know about me, is that I like apple sorbet. One spoonful of it and I am transported to a galaxy where apple is bountiful and time lasts forever. Until the spoonful melts and I am left with lukewarm syrup-like water in my mouth, those darn laws of nature. The heavenly apple sorbet, like many other foods across our diverse planet, was created out of the sheer curiosity of the human mind. “Hmm, I wonder what it would taste like if I pour this into that.” And thus, my friends, we have tasted succulent inventions such as crème brûlée, peanut butter chicken and, yes, even your grandma’s cookies. What a world it would be without them! Curiosity it seems, perpetually lingers close to our hearts, always deciphering ways that something could become more interesting and more divine. &lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;If there’s one thing you should know about me, is that I like apple sorbet. One spoonful of it and I am transported to a galaxy where apple is bountiful and time lasts forever. Until the spoonful melts and I am left with lukewarm syrup-like water in my mouth, those darn laws of nature. The heavenly apple sorbet, like many other foods across our diverse planet, was created out of the sheer curiosity of the human mind. “Hmm, I wonder what it would taste like if I pour this into that.” And thus, my friends, we have tasted succulent inventions such as crème brûlée, peanut butter chicken and, yes, even your grandma’s cookies. What a world it would be without them! Curiosity it seems, perpetually lingers close to our hearts, always deciphering ways that something could become more interesting and more divine. &lt;/p&gt;
+
+&lt;p&gt;From everyday occurrences such as food to lustrum long projects such as architecture, the human mind is built to discover; and this is where I come in. My name is Ricardo Vazquez and I am an explorer. I have tasted discovery and, once you start, it’s hard to ever stop. During my undergraduate degree in Semiotics at the University of Toronto, I was always looking out for the curious, the sublime, that which is ineffable. I found the answer in the digital realm. In a digital world, one can impact an incredible amount of change yet at the same time constantly discover new technological advances. Ladies and gentlemen, the Internet is my apple sorbet. &lt;/p&gt;
+
+&lt;p&gt;I join the Myplanet Team as a Gropius Fellow. Throughout my blog entries, I will focus on what I have learned from my Mentor and Myplanet while building websites using Client Side languages like HTML, CSS, JavaScript and jQuery. I’m excited to let you in on my journey to a planet full of creative masterminds and addictive personalities. I’m also really excited for all the learning opportunities that lie ahead, which I of course will share with you. Surely there will be times of confusion and doubt, but isn’t that what pushes one forward? If there is one thing you should take away from our conversation, is that no matter how comfortable you are with something, always choose to be uncomfortable with it. Why do you think I now love apple sorbet? I would still be stuck with lemon, otherwise.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>I wrote an Alfred App extension</title>
+    <link rel="alternate" href="/2012/12/28/i-wrote-an-alfred-app-extension/"/>
+    <id>/2012/12/28/i-wrote-an-alfred-app-extension/</id>
+    <published>2012-12-28T00:00:00Z</published>
+    <updated>2012-12-28T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;I&amp;#39;m really excited about Alfred coming out with Version 2 of their award-winning app. I decided to write a small Extension that allows Mac users to easily switch the contexts of their Function Keys. Starcraft gamers like myself often have to dig deep into System Preferences to toggle Function Keys, only to have to go back to toggle them back to their normal Volume Up/Down states. Alfred to the rescue! By simply typing the keyword fkeys you will be able to toggle the context of your Function Keys. You will be able to toggle between normal Function Keys, or hardware/media controlled Function Keys. Remember that you need the Alred Powerpack to be able to install this and many more incredibly productive Extensions.All you need to do is simply click here to download the Alfred Extension and double-click to import the script in Alfred. Now, let&amp;#39;s play some Starcraft.&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;I&amp;#39;m really excited about Alfred coming out with Version 2 of their award-winning app. I decided to write a small Extension that allows Mac users to easily switch the contexts of their Function Keys. Starcraft gamers like myself often have to dig deep into System Preferences to toggle Function Keys, only to have to go back to toggle them back to their normal Volume Up/Down states. Alfred to the rescue! By simply typing the keyword fkeys you will be able to toggle the context of your Function Keys. You will be able to toggle between normal Function Keys, or hardware/media controlled Function Keys. Remember that you need the Alred Powerpack to be able to install this and many more incredibly productive Extensions.All you need to do is simply click here to download the Alfred Extension and double-click to import the script in Alfred. Now, let&amp;#39;s play some Starcraft.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A Multiuser Perspective</title>
+    <link rel="alternate" href="/2011/12/01/a-multiuser-perspective/"/>
+    <id>/2011/12/01/a-multiuser-perspective/</id>
+    <published>2011-12-01T00:00:00Z</published>
+    <updated>2011-12-01T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;I recently finished working on another learning project. Instead of focusing on a single user perspective such as motion capture, the Robin Class developed by Dan Zen (robinflash.wordpress.com) focuses on a multiuser approach to interacting with a game or application. I found Robin quite challenging to get the hang of. However, Dan Zen’s instructions are very straightforward and if you have a background in developing back-end applications, Robin will not be an obstacle for you. The things you can develop with Robin could truly be remarkable. I created a game where users login to the application as drops of water. The goal of the game is to “make it rain”. Simply put, the goal is to move your cursor, which is tied to the water drop as fast as you can. This, in turn, can cause a counter to count up incrementally. What this could be used for is an application that can count how much the user ‘made it rain” and from that number the organization can donate water to developing countries. Ain’t that a neat idea? I think that users would definitely be interested in this idea, because it involves creating something physical out of the virtual. A multiuser experience is really only seen in videogames and social networking sites at the moment. I believe that if we brought multiuser perspectives to a social cause, as is my idea, society could be able to become immersed in the experience. I highly suggest you take a look at Dan Zen’s Robin Class. If you put enough idea creativity into it, you are guaranteed to come up with something truly remarkable.&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;I recently finished working on another learning project. Instead of focusing on a single user perspective such as motion capture, the Robin Class developed by Dan Zen (robinflash.wordpress.com) focuses on a multiuser approach to interacting with a game or application. I found Robin quite challenging to get the hang of. However, Dan Zen’s instructions are very straightforward and if you have a background in developing back-end applications, Robin will not be an obstacle for you. The things you can develop with Robin could truly be remarkable. I created a game where users login to the application as drops of water. The goal of the game is to “make it rain”. Simply put, the goal is to move your cursor, which is tied to the water drop as fast as you can. This, in turn, can cause a counter to count up incrementally. What this could be used for is an application that can count how much the user ‘made it rain” and from that number the organization can donate water to developing countries. Ain’t that a neat idea? I think that users would definitely be interested in this idea, because it involves creating something physical out of the virtual. A multiuser experience is really only seen in videogames and social networking sites at the moment. I believe that if we brought multiuser perspectives to a social cause, as is my idea, society could be able to become immersed in the experience. I highly suggest you take a look at Dan Zen’s Robin Class. If you put enough idea creativity into it, you are guaranteed to come up with something truly remarkable.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

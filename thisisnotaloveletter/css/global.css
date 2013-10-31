@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "pictos";
+  src: url("../fonts/pictos-webfont.eot");
+  src: url("../fonts/pictos-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pictos-webfont.woff") format("woff"), url("../fonts/pictos-webfont.ttf") format("truetype"), url("../fonts/pictos-webfont.svg#pictosregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 7, ../sass/_typography.sass */
+html {
+  font-size: 16px; }
+
+/* line 10, ../sass/_typography.sass */
+h1 {
+  font-family: "crete-rounded-web", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 1.1em;
+  cursor: pointer; }
+
+/* line 18, ../sass/_typography.sass */
+p {
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: italic;
+  font-weight: 400; }
+
+/* line 23, ../sass/_typography.sass */
+h1.icon {
+  font-family: "pictos"; }
+
+/* line 26, ../sass/_typography.sass */
+ul {
+  list-style-type: none; }
+
+/* line 29, ../sass/_typography.sass */
+li {
+  display: inline;
+  margin: 10px;
+  font-size: 100px;
+  color: #c41f1b; }
+
+@font-face {
+  font-family: "fontello";
+  src: url("../fonts/fontello.eot?7062374");
+  src: url("../fonts/fontello.eot?7062374#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?7062374") format("woff"), url("../fonts/fontello.ttf?7062374") format("truetype"), url("../fonts/fontello.svg?7062374#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "fontello";
+    src: url("../fonts/fontello.svg?7062374#fontello") format("svg"); } }
+/* line 47, ../sass/_typography.sass */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center; }
+
+/* opacity .8 */
+/* fix buttons height, for twitter bootstrap */
+ * line-height: 1em */
+/* Animation center compensation - magrins should be symmetric */
+/* remove if not needed */
+ * margin-left: 0.2em */
+/* you can be more comfortable with increased icons size */
+/* font-size: 120% */
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3) */
+/* line 69, ../sass/_typography.sass */
+.icon-cloud-sun:before {
+  content: "\48"; }
+
+/* line 71, ../sass/_typography.sass */
+.icon-heart:before {
+  content: "\2665"; }
+
+/* line 73, ../sass/_typography.sass */
+.icon-emo-happy:before {
+  content: "\e800"; }
+
+/* line 75, ../sass/_typography.sass */
+.icon-garden:before {
+  content: "\e81a"; }
+
+/* line 4, ../sass/global.sass */
+html, body {
+  height: 100%; }
+
+/* line 7, ../sass/global.sass */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 11, ../sass/global.sass */
+body {
+  background: #1e1e1e; }
+
+/* line 15, ../sass/global.sass */
+.slide {
+  position: relative;
+  margin: 40px;
+  -webkit-box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px black;
+  border-radius: 3px;
+  overflow: hidden; }
+
+/* line 24, ../sass/global.sass */
+.content {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 900px;
+  height: auto;
+  text-align: center;
+  margin-left: -450px; }
+  /* line 32, ../sass/global.sass */
+  .content p {
+    font-size: 30px; }
+
+/* line 36, ../sass/global.sass */
+.one, .six, .twelve, .fifteen, .twentyfour, .twentysix {
+  background: #ff4c4c; }
+  /* line 38, ../sass/global.sass */
+  .one h1, .six h1, .twelve h1, .fifteen h1, .twentyfour h1, .twentysix h1 {
+    color: #f2eee1;
+    text-shadow: 0 6px 0 #e03637; }
+  /* line 41, ../sass/global.sass */
+  .one p, .six p, .twelve p, .fifteen p, .twentyfour p, .twentysix p {
+    color: #bf3734;
+    font-size: 30px; }
+
+/* line 46, ../sass/global.sass */
+.two, .eight, .twentyone {
+  background: #f2eee1; }
+  /* line 48, ../sass/global.sass */
+  .two h1, .eight h1, .twentyone h1 {
+    color: #ff4c4c;
+    text-shadow: 0 3px 0 #b83432;
+    z-index: 1; }
+  /* line 52, ../sass/global.sass */
+  .two .icon, .eight .icon, .twentyone .icon {
+    font-size: 1050px;
+    position: absolute;
+    top: -280px;
+    left: -300px;
+    opacity: 0.1;
+    text-shadow: 0 0 0 black; }
+  /* line 59, ../sass/global.sass */
+  .two p, .eight p, .twentyone p {
+    color: #ff4c4c; }
+
+/* line 62, ../sass/global.sass */
+.three, .nine, .nineteen {
+  background: #e85234; }
+  /* line 64, ../sass/global.sass */
+  .three h1, .nine h1, .nineteen h1 {
+    color: #f2eee1;
+    text-shadow: 0 4px 0 #c9472c; }
+  /* line 67, ../sass/global.sass */
+  .three p, .nine p, .nineteen p {
+    font-size: 30px;
+    color: #a63a24; }
+    /* line 70, ../sass/global.sass */
+    .three p span, .nine p span, .nineteen p span {
+      text-decoration: underline; }
+
+/* line 73, ../sass/global.sass */
+.four, .ten, .fourteen, .twenty {
+  background: #5979cd; }
+  /* line 75, ../sass/global.sass */
+  .four h1, .ten h1, .fourteen h1, .twenty h1 {
+    color: #263357;
+    text-shadow: 0 4px 0 #384c80; }
+    /* line 78, ../sass/global.sass */
+    .four h1.icon, .ten h1.icon, .fourteen h1.icon, .twenty h1.icon {
+      font-size: 1050px;
+      position: absolute;
+      top: -280px;
+      right: 0;
+      opacity: 0.2;
+      text-shadow: 0 0 0 black; }
+  /* line 85, ../sass/global.sass */
+  .four p, .ten p, .fourteen p, .twenty p {
+    color: #263357; }
+
+/* line 88, ../sass/global.sass */
+.five, .eleven, .eighteen {
+  background: #5c832f; }
+  /* line 90, ../sass/global.sass */
+  .five h1, .eleven h1, .eighteen h1 {
+    color: #284907;
+    text-shadow: 0 4px 0 #1b3300; }
+  /* line 93, ../sass/global.sass */
+  .five p, .eleven p, .eighteen p {
+    color: #284907; }
+
+/* line 98, ../sass/global.sass */
+.seven, .twentytwo {
+  background: #7b52ab; }
+  /* line 100, ../sass/global.sass */
+  .seven h1, .twentytwo h1 {
+    color: #36175e;
+    text-shadow: 0 4px 0 #280e47; }
+  /* line 103, ../sass/global.sass */
+  .seven p, .twentytwo p {
+    color: #36175e; }
+
+/* line 108, ../sass/global.sass */
+.thirteen, .twentythree {
+  background: #fff8e3; }
+  /* line 110, ../sass/global.sass */
+  .thirteen h1, .twentythree h1 {
+    color: #1882c7;
+    text-shadow: 0 4px 0 #0f537f; }
+
+/* line 114, ../sass/global.sass */
+.sixteen, .twentyfive {
+  background: #fff8e3; }
+  /* line 116, ../sass/global.sass */
+  .sixteen h1, .twentyfive h1 {
+    color: #ffc200;
+    text-shadow: 0 4px 0 #ce9905; }
+  /* line 119, ../sass/global.sass */
+  .sixteen p, .twentyfive p {
+    color: #e7ab06; }
+
+/* line 123, ../sass/global.sass */
+.seventeen, .twentytwo {
+  background: #624fb2; }
+  /* line 125, ../sass/global.sass */
+  .seventeen h1, .twentytwo h1 {
+    color: #bcadff;
+    text-shadow: 0 4px 0 #504091; }
+  /* line 128, ../sass/global.sass */
+  .seventeen p, .twentytwo p {
+    color: #3c306e; }
+
+/* line 131, ../sass/global.sass */
+.spacer {
+  height: 15px; }

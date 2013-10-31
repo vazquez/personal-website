@@ -1,0 +1,508 @@
+/* Table of Content
+==================================================
+    #Reset & Basics (l. 16)
+    #Basic Styles (l. 39)
+    #Typography (l. 49)
+    #Lists (l. 64)
+    #Layout (l. 74)
+    #Search Bar Styling (l. 130)
+    #Header and Nav (l. 240)
+    #Breadcrumb (l. 296)
+    #Posts and Messages Section (l. 327)
+    #Calendar Styling (l. 442)
+    #Clearing FTW (l. 499)
+*/
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block; }
+body {
+    line-height: 1; }
+ol, ul {
+    list-style: none; }
+blockquote, q {
+    quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none; }
+
+/* #Basic Styles
+================================================== */
+body {
+    background: #fff;
+    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* #Typography
+================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: normal; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 24px; }
+
+/* #Lists
+================================================== */
+ul, ol { margin-bottom: 10px; }
+ul { list-style: none outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 6px; }
+li { line-height: 14px; margin-bottom: 12px; }
+
+/* #Layout
+================================================== */
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container .sixteen.columns {
+    width: 940px;
+}
+
+.container .column,
+.container .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container .one-third.column  { width: 300px; }
+.container .two-thirds.column { width: 620px; }
+
+.container footer ul li a {
+    color: white;
+}
+
+footer {
+    height: 30px;
+    margin-top: 30px;
+    background-color: #4479BA;
+    position: relative;
+    color:white;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 8px 20px 0 20px;
+    font-size: 11px;
+    color:white;
+}
+
+footer ul li a, a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+footer ul li a:hover, a:focus {
+    text-decoration: underline;
+}
+
+
+footer ul li:nth-last-child(1){
+    float:right;
+}
+
+/* #Search bar Styling
+================================================== */
+.search {
+    height: 100px;
+    background-color: #EFEFEF;
+    padding: 0;
+}
+
+.form-wrapper {
+    width: 460px;
+    padding: 0;
+    margin: 28px auto 50px auto;
+}
+
+.form-wrapper input {
+    width: 330px;
+    padding: 10px;
+    float: left;
+    font: normal 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #999;
+    border: 0;
+    background: #FFF;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+    color: #999;
+    font-family: "warnock-pro",serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #FFF;
+    text-transform: uppercase;
+    background: #4479BA;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.form-wrapper button:hover{
+    background: #356094;
+}
+
+.form-wrapper button:active,
+.form-wrapper button:focus{
+    background: #356094;
+}
+
+.form-wrapper button:before {
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #4479BA transparent;
+    top: 12px;
+    left: -8px;
+}
+
+.form-wrapper button:hover:before{
+    border-right-color: #356094;
+}
+
+.form-wrapper button:focus:before{
+    border-right-color: #356094;
+}
+
+.form-wrapper button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.form-wrapper button:active {
+    background: #2E5481;
+    border: solid 1px #203E5F;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* #Header and Nav
+================================================== */
+
+header {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #4479BA;
+}
+
+header h1 {
+    padding: 20px;
+    margin-bottom: 0;
+    color:white;
+}
+
+header h1 span {
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: 3px;
+    margin-bottom: 14px;
+    color: #203E5F;
+}
+
+header h1 span:hover {
+    color: #EFEFEF;
+    cursor: pointer;
+}
+
+nav {
+    position: relative;
+    margin-top: -70px;
+    margin-bottom: -20px;
+    margin-right: 00px;
+    float: right;
+}
+
+nav ul li a:last-child {
+    padding-right: 10px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 80px 10px 2px 10px;
+}
+
+nav ul li a img {
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease;
+}
+
+nav ul li a img:hover {
+    opacity: 1;
+}
+
+/* #Breadcrumbs
+================================================== */
+
+.breadcrumb {
+    color: white;
+    background: rgba(68, 121, 186, 0.6);
+}
+
+.breadcrumb h5 {
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.breadcrumb h5 a, a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+
+.breadcrumb h5 span a, a:visited {
+    color: rgba(250, 250, 250, 0.7);
+    text-decoration: none;
+}
+
+.breadcrumb h5 span a:hover, a:focus {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+
+/* #Posts and Message Section
+================================================== */
+
+.posts {
+    padding-top: 40px;
+}
+
+.posts h4 {
+    color: #4479BA;
+    border-bottom: 1px solid #4479BA;
+}
+
+.posts h4 span a {
+    font-size: 11px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #4479BA;
+}
+
+.posts ul li:first-child {
+    margin-top: 20px;
+}
+
+.posts h4 span a:hover {
+    text-decoration: underline;
+}
+
+.posts ul li a, a:visited {
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.posts ul li a:hover, a:focus {
+    color: #4479BA;
+    text-decoration: underline;
+}
+
+.location ul:nth-child(3) {
+    padding-left: 60px;
+}
+
+.location ul:nth-child(4) {
+    padding-right: 60px;
+}
+
+.left {
+    float:left;
+    padding-left: 20px;
+}
+
+.right {
+    float: right;
+    padding-right: 70px;
+}
+
+.message h5, h6 {
+    color: rgba(0,0,0,0.7);
+}
+
+.message h5 {
+    padding-top: 20px;
+}
+
+.messageText {
+    padding-top: 20px;
+}
+
+.message .jobID {
+    float: right;
+    padding-right: 20px;
+    color:rgba(0,0,0,0.4);
+}
+
+.reply span {
+    color: rgba(0,0,0,0.5);
+}
+
+.reply a, a:visited {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.reply a:hover, a:focus {
+    color: #4479BA;
+    text-decoration: underline;
+}
+
+.actions ul li a, a:visited {
+    color: rgba(0,0,0,0.7);
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: normal;
+
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.actions ul li a:hover, a:focus {
+    color: #4479BA;
+    text-decoration: none;
+}
+
+.actions .disclaimer {
+    color: rgba(0,0,0,0.4);
+    font-size: 11px;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: normal;
+}
+
+/* #Calendar Styling
+================================================== */
+
+ol.calendar {
+    width:300px;
+    margin:0 auto;
+    display:block;
+    min-height: 200px;
+    padding: 20px 10px 0 0;
+}
+
+li {
+    list-style:none;
+}
+
+p.link {
+    text-align:center;
+    display: block;
+}
+
+li li {
+    width:24px;
+    height:24px;
+    float:left;
+    margin:3px;
+    padding:1px;
+    overflow:auto;
+}
+
+#thismonth ol li {
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+#thismonth ol li:hover {
+    color: rgba(0,0,0,0.9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#nextmonth ol li {
+    color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+#nextmonth ol li:hover {
+    color: rgba(0,0,0,0.9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* #Clearing
+================================================== */
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

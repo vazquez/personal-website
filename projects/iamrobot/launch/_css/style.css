@@ -1,0 +1,217 @@
+/*target / context = result */
+
+root { 
+    display: block;
+}
+
+
+
+
+    body {
+       background-color: #DCDBD9; /*  url("../_img/body_bg3.png") repeat-y 50% 0; */
+        color: #2C2C2C;
+        font: normal 100% Cambria, Georgia, Serif; 
+    /*    making font 100% will set the base type to the browser's default, 16px*/
+        }
+
+    h1 {
+        font-size: 1.5em;  /* Target is 24px, context is 16px, 24/16*/
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    h1 a {
+        color: #CCC;
+        font: bold 0.5em Calibri, Optima, Arial, sans-serif; /* T12 / C24*/
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    blockquote {
+        color: #009999;
+        font-size: 1.5em; /*24/16*/
+        font-style: italic;
+        border-top: 1px solid #2C2C2C;
+        border-bottom: 1px solid #2C2C2C;
+        padding: 1em 0;
+        
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .separator {
+        border: 1px dotted;
+        color: #009999;
+        margin: 20px 0;
+    }
+    
+    #page {
+        margin: 36px auto;
+        width: 90%; /*Roughly 960px*/
+        background-color: white;
+    }
+    
+    #cutout {
+        background: url('../_img/cutout2.png') repeat-x;
+        height: 8px;
+        z-index: 10;
+        
+        width:100%;
+}
+   
+    .lede {
+        background-color:#009999 ;
+        line-height: 3em;
+        color:white;
+        padding: 0.8em 5.33333333%; /* T48/C900*100 */
+        
+        /*        text-transform: uppercase;*/
+    }
+    
+    .blog{
+        margin: 0 auto 53px;
+        width: 93.75%; /*T900/C960*100 */
+        
+    }
+        
+    .blog .main{
+        float: left;
+        width: 60.88888889%; /*T566/C900*100 */
+    }
+    
+    .blog .main h2 {
+        color:#009999;
+    }
+    
+    .article {
+        padding: 0 3.5335689%; /*T20/C566*100 */
+    }
+    
+    .article img{
+        max-width: 100%;
+        width:100%
+    }
+    
+    .article .figcaption {
+        font-size: 0.8125em;  /*T13/C16*/
+        font-style: italic;
+    }
+    
+    .blog .other {
+        float: right;
+        width: 36.77777778%; /*T331/C900*100 */
+        margin-top: 6.111111111%; /*T55/C900*100 */ 
+        
+    }
+    
+    .blog .other p {
+
+        font-size: 1em; /*16px*/
+    }
+    
+    .recentEntries  {
+            
+        padding: 0 1.2%;
+        
+    }
+    
+    .recentEntries {
+        border-bottom: 1px dotted black;
+    }
+    .recentEntries p{
+        text-align: left;
+        font-style: italic;
+        text-transform: none;   
+        font-size: 1em; /*16px*/
+        
+    }
+
+    .date {
+        background-color: rgba(44,44,44,0.8);
+        color:white;
+        font: bold 100% Cambria, Georgia, Serif; 
+        line-height: 2.5em;
+        border-radius: 0.3125em;
+        position:relative;
+        text-align: center;
+        float: left;
+        width: 14%;
+        margin-left: -15.5%;
+        
+    }
+    
+    .date:before {
+        content:"";
+        position:absolute;
+        top:0;
+        right:0;
+        border-width:0 16px 16px 0;
+        border-style:solid;
+        border-color:#cccccc #fff;
+    }
+    
+    .smallDate {
+        display: none;
+        background-color: rgba(44,44,44,0.8 );
+        color: white;
+        height: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+@media screen and (max-width: 769px) {
+        .date {
+            display: none;
+        }
+        
+        .smallDate {
+            display: block;
+        }
+        
+        .blog .main {
+            float: left;
+            width: 100%; /*T566/C900*100 */
+        }
+        
+        .blog .other {
+            float:left;
+            width: 100%;
+            
+        }
+        
+        .blog .other p {
+            text-align: center;
+        }
+}
+
+@media screen and (max-width: 320px) {
+        .date {
+            display: none;
+        }
+        
+        .smallDate {
+            display: block;
+        }
+        
+        .blog .main {
+            float: left;
+            width: 100%; /*T566/C900*100 */
+        }
+        
+        .blog .other {
+            float:left;
+            width: 100%;
+            
+        }
+        
+        .blog .other p {
+            text-align: center;
+        }
+}

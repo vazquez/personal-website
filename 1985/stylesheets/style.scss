@@ -1,0 +1,89 @@
+sup {
+    font-size: 14px;
+}
+
+// img {
+//     max-width: 960px;
+//     max-height: auto;
+// }
+
+#title {
+    background: #28403D;
+    padding-bottom: 10px;
+    h1, h5{
+        color: #FAF8EE;
+    }
+}
+
+.intro {
+    background: #596959;
+    .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    .title {
+            font-family: "adelle",serif;
+            font-style: normal;
+            font-weight: 400;
+            color: #FAF8EE;
+    }
+    p {
+        color: #FAF8EE;
+    }
+}
+
+.pictures {
+    background: #89997F;
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .title {
+        font-family: "adelle",serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #FAF8EE;
+    }
+    p {
+        color: #FAF8EE;
+    }
+    h6 {
+        color: #FAF8EE;
+    }
+    img {
+        margin-top: 20px;
+        border: 10px solid #596959;
+    }
+}
+
+.hierarchy {
+    background: #F2EECE;
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .title {
+            font-family: "adelle",serif;
+            font-style: normal;
+            font-weight: 400;
+    }
+}
+
+.conclusion {
+    background: #F2CF66;
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .title {
+        font-family: "adelle",serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .references {
+        p{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

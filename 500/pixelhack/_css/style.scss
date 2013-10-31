@@ -1,0 +1,858 @@
+// Variables
+
+$blue: #00ABBD;
+$grey: #252525;
+$offwhite: #F1F1F1;
+$white: #FFF;
+$yellow: #FFD700;
+$red: #CE3C38;
+
+$chivoBlack: 'ChivoBlack', Arial, sans-serif;
+
+$ptop: 40px;
+
+// Mixins
+@mixin text-shadow {
+     text-shadow: 0px -1px 1px #008C9C;
+}
+
+// Font-Face Chivo
+
+@font-face {
+    font-family: 'ChivoBlack';
+    src: url('_fonts/Chivo-Black-webfont.eot');
+    src: url('_fonts/Chivo-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/Chivo-Black-webfont.woff') format('woff'),
+         url('_fonts/Chivo-Black-webfont.ttf') format('truetype'),
+         url('_fonts/Chivo-Black-webfont.svg#ChivoBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChivoBlackItalic';
+    src: url('_fonts/Chivo-BlackItalic-webfont.eot');
+    src: url('_fonts/Chivo-BlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/Chivo-BlackItalic-webfont.woff') format('woff'),
+         url('_fonts/Chivo-BlackItalic-webfont.ttf') format('truetype'),
+         url('_fonts/Chivo-BlackItalic-webfont.svg#ChivoBlackItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChivoItalic';
+    src: url('_fonts/Chivo-Italic-webfont.eot');
+    src: url('_fonts/Chivo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/Chivo-Italic-webfont.woff') format('woff'),
+         url('_fonts/Chivo-Italic-webfont.ttf') format('truetype'),
+         url('_fonts/Chivo-Italic-webfont.svg#ChivoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChivoRegular';
+    src: url('_fonts/Chivo-Regular-webfont.eot');
+    src: url('_fonts/Chivo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_fonts/Chivo-Regular-webfont.woff') format('woff'),
+         url('_fonts/Chivo-Regular-webfont.ttf') format('truetype'),
+         url('_fonts/Chivo-Regular-webfont.svg#ChivoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Document Styling
+
+body {
+    background: $white;
+}
+
+img {
+    max-width: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: $grey;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: $chivoBlack;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h4, h5 {
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+// NAVIGATION SECTION
+
+nav {
+    position: relative;
+    text-align: right;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width: 70%;
+}
+
+header img {
+    position: absolute;
+    top: 16px;
+    left: 3%;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 13px 0 18px 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 16px;
+    // color: ;
+    vertical-align: middle;
+}
+
+nav ul li img {
+    padding-right: 30px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    padding-bottom: 9px;
+    font-family: $chivoBlack;
+    text-decoration: none;
+    text-align: center;
+    color: $offwhite;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover, :focus {
+        color: $yellow;
+    }
+}
+
+#nav .current a {
+  color: $yellow;
+}
+
+// INTRO SECTION
+
+.intro {
+    background: $blue;
+}
+
+#hosted_by {
+    color: $white;
+    text-align: center;
+    margin-top: -25px;
+    padding-bottom: 30px;
+    @include text-shadow;
+
+    img {
+        margin-left: 2px;
+    }
+
+}
+
+.intro h1, .intro h3  {
+    @include text-shadow;
+}
+
+#logo {
+    display: block;
+    padding: 80px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: $chivoBlack;
+    // font-size: 70px;
+    // line-height: 85px;
+    color: $white;
+}
+
+.intro h1 {
+    padding-top: $ptop;
+}
+
+.intro h3 {
+    font-family: $chivoBlack;
+    color: $white;
+}
+
+.intro h1, .intro h4, .intro h5 {
+    color: $white;
+}
+
+.intro .container .eight{
+    padding-bottom: 30px;
+}
+
+.intro .container .one-third {
+    // padding-bottom: 30px;
+    // padding-top: $ptop;
+}
+
+.intro .container .one-third:last-of-type {
+    padding-bottom: 100px;
+}
+
+.developers.eight.columns, .designers.eight.columns {
+    padding-bottom: 0;
+}
+
+#map {
+    width: 960px;
+    height: 500px;
+    margin: 40px auto 40px auto;
+    margin-bottom: 40px;
+}
+
+.details {
+    padding-top: 20px;
+}
+
+.details h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+// What
+.details h3:nth-child(2) {
+    padding-left: 16px;
+}
+
+// Where
+.details h3:nth-child(3) {
+    padding-left: 0;
+}
+
+// When
+.details h3:nth-child(4) {
+    padding-left: 12px;
+}
+
+// Why
+.details h3:nth-child(5) {
+    padding-left: 27px;
+}
+
+.details span {
+    font: 18px/25px "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-left: 10px;
+}
+
+.details span a, a:visited {
+    color: $white;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover, :focus {
+        color: $yellow;
+    }
+}
+
+.overall_winner {
+    height: 10px;
+}
+
+.prizes h1 {
+    padding-top: $ptop;
+}
+
+.prize h3 {
+    padding-top: 50px;
+}
+
+// .bigprize img {
+//     padding: 15px 0;
+// }
+
+.bigprize h3 {
+    padding-top: 40px;
+}
+
+// .prize img {
+//     padding: 15px 0;
+// }
+
+.contextio h3 {
+    font-size: 26px;
+}
+
+// REGISTER SECTION
+
+.register h1{
+    padding-top: 80px;
+}
+
+.register h1, h4 {
+    color: $blue;
+}
+
+.register #twitter {
+    padding-top: 15px;
+    margin-left: 45%;
+}
+
+
+.register .signup {
+    margin-left: 37%;
+    img{
+    padding-top: 30px;
+    }   
+}
+
+#widget {
+    margin-left: 30px;
+}
+
+// SPONSORS SECTION
+
+.sponsors h1 {
+    padding-top: 50px;
+}
+
+.sponsors h1, h4, h5 {
+    color: $blue;
+}
+
+.sponsors h3 {
+    font-family: $chivoBlack;
+    padding-top: $ptop;
+}
+
+.sponsors img {
+    padding-top: 10px;
+}
+
+.goldTitle h3,
+.silverTitle h3,
+.bronzeTitle h3 {
+    font-family: $chivoBlack;
+    padding-top: $ptop;
+    color: $blue;
+}
+
+.goldTitle h6,
+.silverTitle h6,
+.bronzeTitle h6 {
+    padding-bottom: 15px;
+    margin-top: -10px;
+    color: $blue;
+}
+
+.contact:link, .contact:visited {
+    color: $blue;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover, :focus {
+        color: $yellow;
+    }
+}
+
+#canon {
+    padding-left: 13%;
+}
+
+
+// JUDGES SECTION
+
+.judges {
+    h1 {
+        padding-top: 60px;
+    }
+    h3{
+        font-family: $chivoBlack;
+        padding-top: 30px;
+        // text-align: center;
+    }
+    h1, h3, h4 {
+        color: $blue;
+    }
+    h5 a {
+        color: $blue;
+         -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+// COVERAGE SECTION
+
+.coverage h1 {
+    padding-top: 60px;
+}
+
+.coverage h1, h3, h4 {
+    color: $blue;
+}
+
+.video-wrapper {
+    width: 960px;
+    max-width: 100%;
+    padding-top: $ptop;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.coverage h3 {
+    font-family: $chivoBlack;
+    color: $blue;
+    padding-top: $ptop;
+}
+
+.coverage a:link, .coverage a:visited {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font: 23px/25px "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: $blue;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover, :focus {
+        color: $yellow;
+    }
+}
+
+.judges h5 {
+    margin-top: -3px;
+    
+}
+
+// FOOTER SECTION
+
+footer {
+    width: 100%;
+    margin-top: 30px;
+    background: $blue;
+}
+
+
+footer .container p {
+    padding: 20px 10px 0px;
+    color: white;
+    font-size: 11px;
+    float: right;
+}
+
+footer .container a:link {
+    color: white;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &:hover, :focus {
+        color: $yellow;
+    }
+}
+
+// PSEUDO
+
+::selection {
+  background:rgb(255, 215, 0);
+  color:white;
+}
+
+::-moz-selection {
+  background:rgb(255, 215, 0);
+  color:white;
+}
+
+::-webkit-selection {
+  background:rgb(255, 215, 0);
+  color:white;
+}
+
+// MEDIA QUERIES
+
+    //Media query for logo resizing on dekstop
+
+    @media only screen and (max-height: 400px) {
+
+        #logo {
+            width: auto;
+            height: 280px;
+        }
+
+    }
+
+    @media only screen and (max-height: 800px) {
+
+        #logo {
+            width: auto;
+            height: 380px;
+        }
+
+    }
+
+    @media only screen and (min-height: 801px) {
+
+        #logo {
+            width: 580px;
+            height: auto;
+        }
+
+    }
+
+    @media only screen and (max-width: 959px) {
+
+        }
+
+    // Media queries for mobile
+
+
+
+    /* All Mobile Sizes (devices and browser) */
+    @media only screen and (max-width: 980px){
+        #map {
+            width: 700px;
+            height: 500px;
+        }
+        #canon {
+            padding-left: 13%;
+        }
+    }
+    
+    /* Tablet Portrait size to standard 960 (devices and browsers) */
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+        nav ul {
+            margin: 13px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 0 8px;
+            color: $offwhite;
+
+        }
+
+        nav ul li a:link, a:visited {
+            padding-bottom: 9px;
+            font-family: $chivoBlack;
+            text-decoration: none;
+            text-align: center;
+            color: $offwhite;
+            font-size: 13px;
+
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+
+            &:hover, :focus {
+                color: $yellow;
+            }
+        }
+        #canon {
+            padding-left: 3%;
+        }
+        .bigprize h3 {
+            font-size: 25px;
+        }
+        .contextio h3 {
+            font-size: 20px;
+        }
+        .prize h3 {
+            font-size: 25px;
+        }
+        
+
+    }
+
+    @media only screen and (max-width: 767px) {
+        #map {
+            width: 700px;
+            height: 500px;
+            margin: 80px auto 40px auto;
+        }
+
+        // Where
+        .details h3:nth-child(3) span {
+            float: right;
+            padding-left: 94px;
+            margin-top: -29px
+        }
+
+        // Why
+        .details h3:nth-child(5) span {
+            float: right;
+            padding-left: 67px;
+            margin-top: -29px;
+        }
+        #canon {
+            padding-left: 10%;
+        }
+        .overall_winner {
+            height: 490px;
+        }
+    }
+
+    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        nav {
+            display: none;
+        }
+
+        #navlogo {
+            display:none;
+        }
+
+        #logo {
+            width: auto;
+            height: 300px;
+        }
+
+        #canon {
+            padding-left: 0%;
+        }
+        #map {
+            width: 420px;
+            height: 300px;
+        }
+
+        .register .signup {
+            margin-left: 20%;
+        }
+        .register #twitter {
+            margin-left: 38%;
+        }
+        .bronze img{
+            margin-left: 25%;
+        }
+    }
+
+    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+    @media only screen and (max-width: 479px) {
+        nav {
+            display: none;
+        }
+
+        #navlogo {
+            display: none;
+        }
+
+        header img {
+            display: none;
+        }
+
+        #canon {
+            padding-left: 0%;
+        }
+
+        h1 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        #hosted_by img {
+            height: 20px;
+            width: auto;
+
+        }
+
+        h3 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        #welcome {
+            padding-top: 30px;
+        }
+
+        #map {
+            width: 90%;
+            height: 200px;
+        }
+
+        #logo {
+            height: 150px;
+            width: 150px;
+            margin-top: -30px;
+        }
+
+        .intro h1 {
+            padding-top: 0;
+        }
+
+        .intro .container .one-third:last-of-type {
+            padding-bottom: 50px;
+        }
+        
+        .intro .container .eight {
+            padding-bottom: 0px;
+        }
+        
+        .developers h3 {
+            padding-top: 20px;
+        }
+        
+        .bigprize img {
+            padding: 0;
+        }
+        
+        .bigprize h3 {
+            padding-top: 20px;
+        }
+        
+        .prize img {
+            padding: 0px;
+            //margin-left: 9px;
+        }
+        
+        .prize h3 {
+            padding-top: 20px;
+        }
+
+        .details h3 {
+            font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+
+        // What
+        .details h3:nth-child(2) {
+            padding-left: 16px;
+        }
+
+        // Where
+        .details h3:nth-child(3) {
+            padding-left: 7px;
+        }
+
+        // When
+        .details h3:nth-child(4) {
+            padding-left: 12px;
+        }
+
+        // Why
+        .details h3:nth-child(5) {
+            padding-left: 24px;
+        }
+
+        .details h3 span {
+            font: 16px/24px "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        // Where <span>
+        .details h3:nth-child(3) span {
+            padding-left: 69px;
+        }
+
+        // When <span>
+        .details h3:nth-child(4) span {
+            padding-left: 11px;
+        }
+
+        // Why <span>
+        .details h3:nth-child(5) span {
+            padding-left: 53px;
+        }
+
+        .register h1 {
+            padding-top: 30px;
+        }
+        
+        .register .signup {
+            margin-left: 8%;
+        }
+        .register #twitter {
+            margin-left: 32%;
+        }
+        
+
+        .designers {
+            padding-top: 28px;
+        }
+        
+        .coverage h1 {
+            padding-top: 30px;
+        }
+        
+        .coverage .eight a:link, .coverage a:visited {
+            display: block;
+            padding: 5px 0px;
+            text-decoration: none;
+            font: 16px/24px "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #00abbd;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease; }
+            .coverage a:link:hover, .coverage a:link :focus, .coverage a:visited:hover, .coverage a:visited :focus {
+            color: #ffd700;
+        }
+        .judges h1 {
+            padding-top: 30px;
+        }
+        
+        .judges h3 {
+            padding-top: 15px;
+        }
+        .judges h5 {
+            font-size: 14px;
+        }
+        .bronze img {
+            margin-left: 40px;
+        }
+        .overall_winner {
+            height: 400px;
+        }
+
+
+    }
+

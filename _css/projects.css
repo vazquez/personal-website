@@ -1,0 +1,363 @@
+/*
+    Document   : projects
+    Created on : Apr 9, 2012, 3:45:05 PM
+    Author     : RicardoVazquez
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@import 'reset.css';
+@import 'header.css';
+
+.lightbox a img {
+    margin-bottom: 18px;
+    opacity:1;
+    filter:alpha(opacity=100);
+    border-radius: 65px;
+
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.lightbox a img:hover{
+    opacity:0.3;
+}
+
+.lightbox img{
+    max-width: 100%;
+	height: auto;
+}
+
+.remove-bottom {
+        margin-top: 80px;
+    }
+
+h4 a {
+    color:white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+
+/* =============PROJECT SPECIFIC ==================*/
+.view{
+    color: #E3E3E3;
+}
+
+
+.photoStage {
+   margin: 40px 0;
+   position: relative;
+}
+
+.projectPhoto{
+    max-width: 100%;
+/*    border: 5px solid;
+    border-color:  rgba(255,255,255,0.7)*/
+}
+
+.details h6{
+    font-family: "ff-meta-serif-web-pro",serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: .9em;
+    color: white;
+}
+.details {
+  position:absolute;
+  top:0px;
+  left:0px;
+  background:rgb(0,0,0);
+  background: rgba(0,0,0,.65);
+  width:100%;
+  height:auto;
+  padding:10px 0;
+  text-align:center;
+  color:#fff;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.photoStage:hover .details {
+   opacity: 100;
+}
+
+.launchBtn {
+    width: 200px;
+    height: 33px;
+    background: rgba(0,0,0,0.3);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    float:right;
+    margin: 10px;
+    padding: 15px 0 0 0;
+    margin-top: 60px;
+}
+.launchBtn a:active,
+           a:visited,
+           a:link{
+
+    font-family: "ff-meta-serif-web-pro",serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.7s ease;
+
+
+}
+
+.launchBtn:hover {
+     background: rgb(255,255,255);
+     background: rgba(255,255,255,0.8);
+     color:black;
+}
+
+#top {
+    float: right;
+    font-family: "ff-meta-serif-web-pro",serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#top:hover {
+     background: rgb(255,255,255);
+     background: rgba(255,255,255,0.8);
+     color:black;
+}
+
+.contact:link {
+    border-bottom: 1px dotted transparent;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+
+}
+ .contact:hover {
+    border-bottom: 1px dotted white;
+}
+
+
+
+
+
+
+@media only screen and (max-width : 1675px),
+only screen and (max-device-width : 1675px){
+
+    #welcome h1{
+        position: absolute;
+
+        left: 0;
+        width: 100%;
+        font: 1.2em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }
+
+
+}
+
+@media only screen and (max-width:1650px){
+ /*   .remove-bottom{
+        margin-top: 140px;
+    }*/
+}
+
+
+
+
+@media only screen and (max-width: 1645px) {
+    #welcome h1{
+        position: absolute;
+        top: 4.5em;
+        left: 0;
+        width: 100%;
+        font: 1.2em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }
+
+       .remove-bottom{
+        margin-top: 150px;
+    }
+
+    /*.container {
+        margin-top: 90px;
+    }*/
+
+}
+
+
+
+@media only screen and (max-width: 782px) {
+
+    .remove-bottom{
+        margin-top: 160px;
+    }
+
+    /*.container {
+        margin-top: 90px;
+    }*/
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    #welcome h1{
+        position: absolute;
+        top: 5em;
+        left: 0;
+        width: 100%;
+        font: 1.2em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }
+
+    .lightbox img{
+        margin-left: 60px;
+    }
+
+    .projectPhoto{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+/*
+    #welcome h1{
+            position: absolute;
+            top: 7em;
+            left: 0;
+            width: 100%;
+            font: 1.3em Cambria;
+            font-style: italic;
+            line-height: 2em;
+    }*/
+
+     .launchBtn:first-child {
+
+        margin-top: 100px;
+        margin-bottom: -30px;
+    }
+
+}
+
+@media only screen and (max-width:610px){
+    .remove-bottom {
+        margin-top: 160px;
+    }
+}
+
+@media only screen and (max-width:595px){
+    .launchBtn:first-child {
+        margin: 10px;
+        margin-top: 330px;
+    }
+
+    .launchBtn {
+        margin-top: 0px;
+    }
+
+    #welcome h1{
+        position: absolute;
+        top: 6em;
+        left: 0;
+        width: 100%;
+        font: 1.2em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }
+
+    .remove-bottom {
+        margin-top: 350px;
+    }
+
+    #dynamic {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width : 580px),
+only screen and (max-device-width : 580px){
+
+        #welcome h1{
+            position: absolute;
+            top: 13em;
+            left: 0;
+            width: 100%;
+            font: 1.3em Cambria;
+            font-style: italic;
+            line-height: 2.5em;
+
+        }
+
+        #dynamic {
+            display: none;
+        }
+
+}
+
+
+@media only screen and (max-width: 479px) {
+    .lightbox img {
+        margin-left: 0px;
+    }
+
+    .projectName {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 409px) {
+    #welcome h1{
+        position: absolute;
+        top: 14em;
+        left: 0;
+        width: 100%;
+        font: 1.2em Cambria;
+        font-style: italic;
+        line-height: 2.5em;
+    }
+
+    .projectPhoto{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+     .remove-bottom {
+        margin-top: 180px;
+    }
+}
+

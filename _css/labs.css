@@ -1,0 +1,113 @@
+/* 
+    Document   : labs
+    Created on : Apr 15, 2012, 4:09:27 PM
+    Author     : RicardoVazquez
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+@import 'reset.css';
+@import 'header.css';
+
+
+/*ABOUT*/
+
+
+h6 {
+    font-family: "rooney-web",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color:rgba(255,255,255,0.9);
+
+
+}
+
+#margin-top {
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 1645px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 150px;
+    }
+
+
+}
+
+@media only screen and (max-width: 930px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 280px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    
+
+    .lightbox img{
+        margin-left: 60px;
+    }
+    
+  
+}
+
+
+@media only screen and (max-width: 580px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 350px;
+    }
+
+

@@ -1,0 +1,79 @@
+@import url('reset.css');
+
+body {
+  font-family: "kulturista-web",serif;
+  font-style: normal;
+  font-weight: 400;
+  background: #F1F1F1;
+}
+
+.narrative {
+  width: 100%;
+  top: 200px;
+  position: absolute;
+  z-index: 100;
+  background: transparent;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  /*background-color: black;*/
+}
+
+.message h1{
+  font-family: "kulturista-web", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:white;
+  font-size: 53px;
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 76px;
+  margin-bottom: 10px;
+}
+
+.message h2{
+  font-family: "kulturista-web", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 21px;
+  color:white;
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 0px 10px;
+  line-height: 41px;
+}
+
+.interface{
+  width: 100%;
+  top: 300px;
+  position: relative;
+  z-index: 100;
+  background: transparent;
+}
+
+.photo {
+  background-repeat: no-repeat no-repeat;
+  background-position: 50% 50%;
+  background-size: cover !important;
+}
+
+a#next{
+  position: absolute;
+  height: 100%;
+  display: inline-block;
+  top:470px;
+  right:90px;
+}
+
+#frame {
+  margin-top: 0px;
+  min-height: 600px;
+  height: 100%;
+  background-size: cover;
+}

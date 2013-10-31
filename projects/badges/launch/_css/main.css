@@ -1,0 +1,90 @@
+.headline{
+  margin-top: 30px;
+}
+
+.headline {
+  font-style: italic;
+}
+
+.headline hr {
+  margin-bottom: 20px;
+}
+
+#dynamic {
+  text-align:left;
+}
+.sidebar p{
+  font-size: 11px;
+}
+
+.sidebar ol{
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.sidebar ol a{
+  text-decoration: none;
+}
+
+/*.sidebar ol a:active {
+  color: #FFF;
+}*/
+
+/*.sidebar ol li{
+  font: 14px/21px "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  padding: 0;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  filter:alpha(opacity=4);
+}*/
+
+
+.gallery img {
+  padding: 5px;
+  width: 150px;
+}
+
+
+.badgeIcon{
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter:alpha(opacity=3);
+
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.unactive {
+  font: 14px/21px "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  /*text-align: center;*/
+  padding: 0;
+  opacity: 0.4;
+  -moz-opacity: 0.4;
+  filter:alpha(opacity=4);
+
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.active li{
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=100);
+
+
+
+}
+
+.badgeIconClick{
+   opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+}
+

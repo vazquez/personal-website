@@ -1,0 +1,206 @@
+@import 'reset.css';
+@import 'header.css';
+
+.contactText {
+    
+}
+
+#customForm{
+/*	padding: 0 10px 10px;*/
+
+}
+#customForm label{
+	display: block;
+	color: white;
+        font-family: "ff-meta-serif-web-pro";
+/*    font-family: "atrament-web";*/
+       font-style: normal;
+       font-weight: 500;
+       font-size: 1.50em;
+       line-height: 1.6em;
+}
+#customForm input{
+	width: 220px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #cecece;
+}
+#customForm input.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+#customForm textarea{
+	padding: 6px;
+	color: black;
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+        font-weight: 500;
+	font-size: 1em;
+	border: 1px solid #cecece;
+}
+#customForm textarea.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+#customForm div{
+	margin-bottom: 15px;
+}
+#customForm div span{
+	     
+        font-size: .90em;
+        font-family: "ff-meta-serif-web-pro",serif;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.6em;
+        text-align: center;
+        color:rgba(255,255,255,0.7);
+}
+#customForm div span.error{
+	color: #e46c6e;
+}
+#customForm #send{
+        cursor:pointer;
+        font-family: "ff-meta-serif-web-pro",serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        background: rgb(0,0,0);
+        background: rgba(0,0,0,0.5);
+        border-color: rgba(0,0,0,0.5);
+        
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+         transition: all 0.5s ease;
+}
+#customForm #send:hover{
+	background: rgb(255,255,255);
+        background: rgba(255,255,255,0.8);
+        color:black;
+        border-color: white;
+}
+#error{
+	margin-bottom: 20px;
+	border: 1px solid #efefef;
+}
+#error ul{
+	list-style: square;
+	padding: 5px;
+	font-size: 11px;
+}
+#error ul li{
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+#error ul li strong{
+	color: #e46c6d;
+}
+#error.valid ul li strong{
+	color: #93d72e;
+}
+
+#nameInfo {
+    font-size: 1em;
+    font-family: "ff-meta-serif-web-pro",serif;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-align: center;
+    color:rgba(255,255,255,0.7);
+}
+
+#emailInfo {
+    font-size: 3em;
+    font-family: "ff-meta-serif-web-pro",serif;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-align: center;
+    color:rgba(255,255,255,0.7);
+}
+
+#margin-top {
+    margin-top: 80px;
+}
+
+@media only screen and (max-width: 1645px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 150px;
+    }
+
+
+}
+
+@media only screen and (max-width: 930px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 180px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 580px) {
+/*    #welcome h1{
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        font: 1.5em Cambria;
+        font-style: italic;
+        line-height: 2em;
+    }*/
+    
+    #margin-top {
+        margin-top: 350px;
+    }
+
+/*
+@media only screen and (max-width: 487px) {
+    #customForm textarea{
+	padding: 6px;
+	color: black;
+	font-family: "ff-meta-serif-web-pro",serif;
+	font-style: normal;
+        font-weight: 500;
+	font-size: 1em;
+	border: 1px solid #cecece;
+        width: 250px;
+    }
+}*/
+
+@media only screen and (max-width: 320px){
+     #margin-top {
+        margin-top: 0px !important;
+    }
+
+}
