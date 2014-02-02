@@ -32,6 +32,19 @@ p > a {
     color: rgba(255, 255, 255, 0.9);
 }
 
+.info-bar{
+    width: 100%;
+    margin: 3em 0 0 0;
+    padding: 5px 10px;
+    background: #1CA4FC;
+    font-family: "rooney-web", sans-serif;
+    border-radius: 0 0 3px 3px;
+}
+
+.info-bar a{
+    color: inherit;
+}
+
 .blogPhoto {
     width: 100px;
     height: 100px;
@@ -203,10 +216,20 @@ p > a {
         margin-bottom: -20px;
         margin-top: 230px;
     }
+
+     .container {
+        padding: 154px 0 0 0;
+    }
 }
 
 @media only screen and (max-width: 320px){
     #tweetDiv {
         margin-top: 40px;
+    }
+    .info-bar {
+        margin: 0;
+    }
+    .container {
+        padding: 0;
     }
 }
